@@ -67,18 +67,6 @@ html {
     color: var(--primary-btn-text-color);
 }
 
-.primary-btn:hover {
-    @media screen and (hover: hover) and (pointer: fine) {
-        background-color: var(--primary-btn-bg-color-hvr);
-    }
-}
-
-.primary-btn:active {
-    @media screen and (hover: hover) and (pointer: fine) {
-        background-color: var(--primary-btn-bg-color);
-    }
-}
-
 .tag {
     display: inline-flex;
     justify-content: center;
@@ -190,6 +178,16 @@ html {
 
 .w100 {
     width: 100%;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+    .primary-btn:hover {
+        background-color: var(--primary-btn-bg-color-hvr);    
+    }
+
+    .primary-btn:active {
+        background-color: var(--primary-btn-bg-color);
+    }
 }
 
 @media screen and (max-width: 400px) {
